@@ -9,7 +9,7 @@ function App() {
       <div className="card-list">
       {
         people.map( person => 
-          <PersonCard firstName={ person.firstName } lastName={ person.lastName } age={ person.age } hairColor={ person.hairColor }/>
+          <PersonCard key={`people-${person.firstName}`} firstName={ person.firstName } lastName={ person.lastName } age={ person.age } hairColor={ person.hairColor }/>
         )
       }
       </div>
